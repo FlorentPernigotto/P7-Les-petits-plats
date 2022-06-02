@@ -5,12 +5,15 @@
     padding: 0;
 
 }
-
+html {
+    max-width: 50%;
+}
 body {
-
-    max-width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
     font-family: DM Sans, sans-serif ;
 
 }
@@ -37,7 +40,7 @@ header h1 {
 
     color: #D04F4F;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 3.6vw;
     align-self: center;
 
 }
@@ -47,13 +50,15 @@ header h1 {
 #search_container {
 
     display: flex;
-    justify-content: center;
+    width: 100vw;
+    align-content: center;
+    margin-left: 20vw;
 
 }
 
 #search_input {
 
-    width: 100%;
+    width: 90vw;
     height: 69px;
     background-color: #E7E7E7;
     border: none;
@@ -71,7 +76,9 @@ header h1 {
     flex-direction: row;
     gap: 20px;
     padding-bottom: 20px;
-
+    width: 90vw;
+    margin-left: 10vw;
+    padding-right: 10vw;
 }
 
 .filter_appearance {
@@ -109,12 +116,27 @@ header h1 {
 
 }
 
+/* Gallerie de recettes */
+
+#recipe_gallery {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 100vw;
+    margin-left: 10vw;
+
+}
+
 .recipe_card {
 
     display: flex;
     flex-direction: column;
     width: 380px;
     height: 364px;
+    border-radius: 5px;
 
 }
 
