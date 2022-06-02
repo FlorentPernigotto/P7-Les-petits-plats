@@ -1,0 +1,116 @@
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    max-width: 1440px;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: DM Sans, sans-serif ;
+
+}
+
+/* HEADER */
+
+header {
+
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding-top: 42px;
+    padding-bottom: 17px;
+
+}
+
+header svg {
+
+    align-self: center;
+
+}
+
+header h1 {
+
+    color: #D04F4F;
+    font-weight: 700;
+    font-size: 36px;
+    align-self: center;
+
+}
+
+/* Search Board */
+
+#search_container {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#search_input {
+
+    width: 100%;
+    height: 69px;
+    background-color: #E7E7E7;
+    border: none;
+    border-radius: 5px;
+    padding: 23px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Filtre de recherche */
+
+#filter {
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 20px;
+
+}
+
+.filter_appearance {
+
+    gap: 35px;
+    padding: 23px;
+    border-radius: 5px;
+
+}
+
+#filter_ingredients {
+
+    display: flex;
+    flex-direction: row;
+    background-color: #3282F7;
+
+}
+
+#filter_appareils {
+
+    display: flex;
+    flex-direction: row;
+    background-color: #68D9A4;
+
+}
+
+#filter_ustensils {
+
+    display: flex;
+    flex-direction: row;
+    background-color: #ED6454;
+
+}
+
+.recipe_container_card {
+    display: flex;
+    flex-direction: column;
+}
+.recipe_container_image {
+    background-color: #C7BEBE;
+    height: 50%;
+}
