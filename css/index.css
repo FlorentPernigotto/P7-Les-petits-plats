@@ -8,7 +8,7 @@
 
 body {
 
-    max-width: 1440px;
+    max-width: 100%;
     padding-left: 100px;
     padding-right: 100px;
     font-family: DM Sans, sans-serif ;
@@ -79,6 +79,9 @@ header h1 {
     gap: 35px;
     padding: 23px;
     border-radius: 5px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
 
 }
 
@@ -106,11 +109,69 @@ header h1 {
 
 }
 
-.recipe_container_card {
+.recipe_card {
+
     display: flex;
     flex-direction: column;
+    width: 380px;
+    height: 364px;
+
 }
+
 .recipe_container_image {
+
     background-color: #C7BEBE;
     height: 50%;
+
+}
+
+.recipe_container_infos {
+
+    padding: 20px;
+    background-color: #E7E7E7;
+
+}
+
+.recipe_title_time {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.recipe_title_time h2 {
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: Lato, sans-serif;
+
+}
+
+.recipe_title_time p {
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.recipe_ingredient_instruction {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 20px;
+
+}
+.recipe_ingredients_container {
+
+    width: 50%;
+    font-size: 12px;
+    font-weight: 700;
+}
+.recipe_instruction_container {
+    width: 50%;
+    font-size: 12px;
+    text-align: justify;
 }
