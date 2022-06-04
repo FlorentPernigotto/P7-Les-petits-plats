@@ -77,20 +77,22 @@ header h1 {
     align-self: flex-start;
     gap: 20px;
     padding-bottom: 20px;
-    width: 40vw;
+    width: 100%;
     margin-left: 5vw;
     padding-right: 10vw;
 }
 
 .filter_appearance {
 
-    gap: 5px;
-    padding: 23px 23px 23px 23px;
+    display: flex;
+    justify-content: space-evenly;
     border-radius: 5px;
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 1.2vw;
-    width: calc( ( 100% / 3) - (20px * 3 ) );
+    font-size: 13px;
+    width: 170px;
+    height: 69px;
+    align-items: center;
 
 }
 
@@ -99,7 +101,7 @@ header h1 {
     display: flex;
     flex-direction: row;
     background-color: #3282F7;
-
+    
 }
 
 #filter_appareils {
