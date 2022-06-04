@@ -74,21 +74,23 @@ header h1 {
 
     display: flex;
     flex-direction: row;
+    align-self: flex-start;
     gap: 20px;
     padding-bottom: 20px;
-    width: 90vw;
-    margin-left: 10vw;
+    width: 40vw;
+    margin-left: 5vw;
     padding-right: 10vw;
 }
 
 .filter_appearance {
 
-    gap: 35px;
-    padding: 23px;
+    gap: 5px;
+    padding: 23px 23px 23px 23px;
     border-radius: 5px;
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.2vw;
+    width: calc( ( 100% / 3) - (20px * 3 ) );
 
 }
 
