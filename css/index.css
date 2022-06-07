@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90vw;
+    width: 100vw;
     font-family: DM Sans, sans-serif ;
 
 }
@@ -40,7 +40,7 @@ header h1 {
 
     color: #D04F4F;
     font-weight: 700;
-    font-size: 3.6vw;
+    font-size: 36px;
     align-self: center;
 
 }
@@ -79,7 +79,7 @@ header h1 {
     padding-bottom: 20px;
     width: 100%;
     margin-left: 5vw;
-    padding-right: 10vw;
+    margin-right: 10vw;
 }
 
 .filter_appearance {
@@ -128,9 +128,8 @@ header h1 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 100px;
     width: 100vw;
-    margin-left: 10vw;
 
 }
 
@@ -138,7 +137,7 @@ header h1 {
 
     display: flex;
     flex-direction: column;
-    width: 380px;
+    width: calc((90vw / 3 ) - (50px * 2));
     height: 364px;
     border-radius: 5px;
 
