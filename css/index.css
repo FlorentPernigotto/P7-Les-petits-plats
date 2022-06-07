@@ -81,7 +81,6 @@ header h1 {
     margin-left: 5vw;
     margin-right: 10vw;
 }
-
 .filter_appearance {
 
     display: flex;
@@ -92,11 +91,11 @@ header h1 {
     font-size: 13px;
     width: 170px;
     height: 69px;
-    align-items: center;
+    text-align: center;
+    border: none;
 
 }
-
-#filter_ingredients {
+#ingredients {
 
     display: flex;
     flex-direction: row;
@@ -104,7 +103,7 @@ header h1 {
     
 }
 
-#filter_appareils {
+#appareils {
 
     display: flex;
     flex-direction: row;
@@ -112,12 +111,18 @@ header h1 {
 
 }
 
-#filter_ustensils {
+#ustensils {
 
     display: flex;
     flex-direction: row;
     background-color: #ED6454;
 
+}
+
+#ingredients::placeholder, #appareils::placeholder,
+#ustensils::placeholder {
+    color: #FFFFFF;
+    text-align: center;
 }
 
 /* Gallerie de recettes */
