@@ -1,5 +1,3 @@
-const getRecipeData = async function () {
-    let reponse = await fetch('../data/recipes.json')
-    let data = await Response.json()
-    console.log(data)
-}
+fetch('../data/recipes.json')
+  .then(response => response.json())
+  .then(json => console.log(json))
