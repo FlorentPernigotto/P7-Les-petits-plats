@@ -1,10 +1,8 @@
-
-
 function recipeFactory () {
 
-    const recipesFactory = document.getElementById('recipe_gallery')
+    const recipesCardDOM = document.getElementById('recipe_gallery')
 
-        recipesFactory.innerHTML = `
+        recipesCardDOM.innerHTML = `
         <article class="recipe_card">
             <div class="recipe_container_image">
 
@@ -32,6 +30,7 @@ function recipeFactory () {
                 </div>
             </div>
         </article>`;
-
 }
+
+
     
