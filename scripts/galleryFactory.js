@@ -1,4 +1,7 @@
-function recipeFactory () {
+class recipeCard {
+    constructor(recipe) {
+        this._recipe = recipe
+    }
 
     const recipesCardDOM = document.getElementById('recipe_gallery')
 
