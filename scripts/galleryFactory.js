@@ -32,5 +32,7 @@ function recipeFactory () {
         </article>`;
 }
 
+recipeFactory()
+
 
     

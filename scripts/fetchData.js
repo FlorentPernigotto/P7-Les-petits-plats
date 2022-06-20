@@ -1,5 +1,17 @@
-fetch('data/recipes.json')
-  .then(response => response.json())
-  .then(json => console.log(json))
+function createCard(object){
+  const galleryCardDOM = document.getElementById('recipe_gallery');
+  return {
+      recipesArray: object.recipes[0].name
+  }
+}
 
-  console.log(json)
+async function fetchDataRecipe() {
+
+  const recipesFetch = await fetch('data/recipes.json')
+    .then(response => response.json())
+  const card = createCard(recipesFetch);
+  console.log(card);
+
+}
+
+fetchDataRecipe()
