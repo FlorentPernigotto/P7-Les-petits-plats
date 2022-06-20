@@ -1,5 +1,4 @@
 fetch('data/recipes.json')
-  .then(response => response.json())
-  .then(json => console.log(json))
+  .then(res => res.json())
+  .then(data =>console.log(data.recipes))
 
-  console.log(json)
