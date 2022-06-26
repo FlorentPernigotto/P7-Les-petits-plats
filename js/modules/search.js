@@ -3,37 +3,60 @@ import FilterDropdown from '../class/FilterDropdown.js';
 const search = (filters, recipes) => {
 
     const searchBar = document.getElementById('search-principal__input');
+
     const search = (searchBar.value.length >= 3) ? searchBar.value : null;
 
-    // Boucle sur chaque recette et test s'il y a une correspondance avec les filtres ou la recherche de l'utilisateur
-    recipes.forEach(recipe => {
+    
+    /**
+     * Boucle sur chaque recette et test s'il y a une correspondance avec les filtres ou la recherche de l'utilisateur
+     */
+    for (let i = 0; i < recipes.length; i++) {
+        let recipe = recipes[i];
         let visible = true;
 
         if (filters.length > 0) {
-            const appareils = [recipe.appareils.toLowerCase()];
-            const ingrédients = recipe.ingredients.map(ingredients => ingredients.ingredient.toLowerCase());
-            const ustensils = recipe.ustensils.map(ustensil => ustensil.toLowerCase());
-            const allFilters = [...appareils, ...ingrédients, ...ustensils];
+            let appareil = recipe.appareils.toLowerCase();
+            let ingredients = recipe.ingredients;
+            let ustensils = recipe.ustensils;
+            let allFilters = [appareil];
 
-            filters.forEach(filter => {
+
+            for (let i = 0; i < ingredients.length; i++) {
+                const current = ingredients[i].ingredient.toLowerCase();
+                
+                allFilters = [...allFilters, current];
+            }
+
+            for (let i = 0; i < ustensils.length; i++) {
+                const current = ustensils[i].toLowerCase();
+                
+                allFilters = [...allFilters, current];
+            }
+
+            for (let i = 0; i < filters.length; i++) {
+                let filter = filters[i];
+
                 if(!allFilters.includes(filter.name.toLowerCase())){
                     visible = false;
                 }
-            })
+            }
         }
 
-        if (search) {
-            recipe.ingredients.forEach(current => {
-                if (!current.ingredient.toLowerCase().includes(search) && !recipe.description.toLowerCase().includes(search) && !recipe.name.toLowerCase().includes(search)) {
+        if (search !== null) {
+
+            for (let i = 0; i < recipe.ingredients.length; i++) {
+                const current = recipe.ingredients[i];
+
+                if(!current.ingredient.toLowerCase().includes(search) && !recipe.description.toLowerCase().includes(search) && !recipe.name.toLowerCase().includes(search)){
                     visible = false;
                 }
-            });
+            }
         }
-
-        if (recipe.element.classList.contains("hidden") === visible) {
+        
+        if(recipe.element.classList.contains("hidden") === visible) {
             recipe.toggleVisibility();
         }
-    });
+    }
 
 
     FilterDropdown.updateDropDowns(); // Met à jour les filtres disponibles
@@ -44,6 +67,7 @@ const search = (filters, recipes) => {
     }else{
         document.querySelector('.recipes-container .empty-msg').classList.remove('visible');
     }
+
 }
 
 export default search;

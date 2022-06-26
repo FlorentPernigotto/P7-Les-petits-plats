@@ -14,6 +14,7 @@ export default class FilterDropdown{
 
     static instances = [];
 
+
     /**
      * Créer la vue du filtre "dropdown"
      */
@@ -83,7 +84,7 @@ export default class FilterDropdown{
         let content = e.target.value.toLowerCase();
 
         if (content.length >= 3 || (e.inputType === 'deleteContentBackward' && content.length >= 3)) {
-            this.element.classList.add('entries');
+
             this.tagList.forEach(tag => {
                 let str = tag.name.toLowerCase();
                 if (str.includes(content)) {
@@ -93,13 +94,10 @@ export default class FilterDropdown{
                 }
             })
         }else{
-            this.element.classList.remove('entries');
             this.tagList.forEach(tag => {
                 tag.listElementRes.classList.remove('hidden-by-keydown');
             })
         }
-
-        FilterDropdown.showEmptyMessage()  
     }
 
     /**
@@ -177,9 +175,9 @@ export default class FilterDropdown{
      * Affiche le message 'aucun filtre disponible' à l'utilisateur si besoin
      */
     static showEmptyMessage = () => {
-        let ingredient = document.querySelectorAll('.ingredient-dropdown li:not(.hidden-by-tags):not(.already-selected):not(.hidden-by-keydown)');
-        let appareil = document.querySelectorAll('.appareil-dropdown li:not(.hidden-by-tags):not(.already-selected):not(.hidden-by-keydown)');
-        let ustensile = document.querySelectorAll('.ustensile-dropdown li:not(.hidden-by-tags):not(.already-selected):not(.hidden-by-keydown)');
+        let ingredient = document.querySelectorAll('.ingredient-dropdown li:not(.hidden-by-tags):not(.already-selected)');
+        let appareil = document.querySelectorAll('.appareil-dropdown li:not(.hidden-by-tags):not(.already-selected)');
+        let ustensile = document.querySelectorAll('.ustensile-dropdown li:not(.hidden-by-tags):not(.already-selected)');
 
         if (appareil.length === 0) {
             document.querySelector('.appareil-dropdown .empty-msg').classList.add('visible');

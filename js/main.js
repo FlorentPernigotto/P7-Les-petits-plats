@@ -7,7 +7,6 @@ import search from "./modules/search.js";
 
 const searchPrincipal = document.getElementById('search-principal__input');
 
-
 try {
     await Api.init();
 
