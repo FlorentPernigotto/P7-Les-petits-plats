@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 /**
  * Ajoute un élément à la fin d'un autre élément
  * @param {HTMLElement} element 
@@ -5,7 +6,7 @@
  */
 const append = (element, target) => {
     target.appendChild(element);
-}
+};
 
 /**
  * Remplace un élément par un autre élément
@@ -14,7 +15,7 @@ const append = (element, target) => {
  */
 const replace = (element, target) => {
     target.parentNode.replaceChild(element, target);
-}
+};
 
 /**
  * Ajoute un élément avant un autre élément
@@ -23,7 +24,7 @@ const replace = (element, target) => {
  */
 const insertBefore = (element, target) => {
     target.parentNode.insertBefore(element, target);
-}
+};
 
 /**
  * Ajoute un élément après un autre élément
@@ -32,7 +33,7 @@ const insertBefore = (element, target) => {
  */
 const insertAfter = (element, target) => {
     target.after(element);
-}
+};
 
 /**
  * Supprime un élément du dom
@@ -40,7 +41,7 @@ const insertAfter = (element, target) => {
  */
 const remove = (element) => {
     element.parentNode.removeChild(element);
-}
+};
 
 const dom = {
     append,
@@ -48,6 +49,6 @@ const dom = {
     insertBefore,
     insertAfter,
     remove
-}
+};
 
 export default dom;

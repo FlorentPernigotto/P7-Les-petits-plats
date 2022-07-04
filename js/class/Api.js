@@ -1,8 +1,8 @@
+/* eslint-disable linebreak-style */
 /**
  * Cette classe simule une api, elle devra être modifier pour mise en prod une fois l'api créer
  */
 export default class Api{
-
     static recipes = [];
     static allIngredients = [];
     static allAppliances = [];
@@ -12,13 +12,13 @@ export default class Api{
      * Simule une connection à une base de donnée avec un fichier json
      */
     static init = async () => {
-        const req = await fetch('./recipes.json');
+        const req = await fetch("./recipes.json");
         if (!req.ok) {
             throw "Données momentanément indisponible";
         }
         const data = await req.json();
         Api.recipes = data.recipes;
-    }
+    };
 
     /**
      * Récupère tous les ingrédients de toutes les recettes
@@ -34,12 +34,12 @@ export default class Api{
                     if (!Api.allIngredients.includes(ingredient.toLowerCase())) {
                         Api.allIngredients = [...Api.allIngredients, ingredient.toLowerCase()];
                     }
-                })
-            })
+                });
+            });
         }
 
         return Api.allIngredients;
-    }
+    };
 
     /**
      * Récupère tous les appareils de toutes les recettes
@@ -52,11 +52,11 @@ export default class Api{
                 if (!Api.allAppliances.includes(recipe.appliance.toLowerCase())) {
                     Api.allAppliances = [...Api.allAppliances, recipe.appliance.toLowerCase()];
                 }
-            })
+            });
         }
 
         return Api.allAppliances;
-    }
+    };
 
     /**
      * Récupère tous les ustensiles de toutes les recettes
@@ -70,19 +70,19 @@ export default class Api{
                     if (!Api.allUstensils.includes(ustensile.toLowerCase())) {
                         Api.allUstensils = [...Api.allUstensils, ustensile.toLowerCase()];
                     }
-                })
-            })
+                });
+            });
         }
 
         return Api.allUstensils;
-    }
+    };
 
     /**
      * Récupère toutes les recettes existantes
      */
     static getAllRecipes = () => {
         return Api.recipes;
-    }
+    };
 
     /**
      * Récupère une recette avec son id
@@ -97,5 +97,5 @@ export default class Api{
             return;
         }
         return recipe[0];
-    }
+    };
 }

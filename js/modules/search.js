@@ -1,8 +1,8 @@
-import FilterDropdown from '../class/FilterDropdown.js';
+import FilterDropdown from "../class/FilterDropdown.js";
 
 const search = (filters, recipes) => {
 
-    const searchBar = document.getElementById('search-principal__input');
+    const searchBar = document.getElementById("search-principal__input");
 
     const search = (searchBar.value.length >= 3) ? searchBar.value : null;
 
@@ -62,12 +62,12 @@ const search = (filters, recipes) => {
     FilterDropdown.updateDropDowns(); // Met à jour les filtres disponibles
 
     // Si aucune recette ne correspond, affiche un message à l'utilisateur qu'aucune recette ne correspond à sa recherche
-    if (document.querySelectorAll('.recipes-container .recipes:not(.hidden)').length === 0) {
-        document.querySelector('.recipes-container .empty-msg').classList.add('visible');
+    if (document.querySelectorAll(".recipes-container .recipes:not(.hidden)").length === 0) {
+        document.querySelector(".recipes-container .empty-msg").classList.add("visible");
     }else{
-        document.querySelector('.recipes-container .empty-msg').classList.remove('visible');
+        document.querySelector(".recipes-container .empty-msg").classList.remove("visible");
     }
 
-}
+};
 
 export default search;
