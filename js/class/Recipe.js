@@ -3,7 +3,7 @@ import utils from '../modules/utils.js'
 export default class Recipe{
     constructor(data){
         this.id = data.id;
-        this.name = data.name;
+		this.name = data.name;
         this.description = data.description;
         this.appareils = data.appliance.toLowerCase();
         this.ingredients = data.ingredients;
