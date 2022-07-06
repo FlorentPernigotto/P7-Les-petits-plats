@@ -1721,6 +1721,39 @@
             "description":"Préparer la frangipane : Mélanger le sucre la poudre d'amander, le beurre et les oeufs. Etaler la moitier de la pate feuilleté et mettre dans un moule à tarte. Garnir de frangipane et recouvrir du reste de pate feuilletée. Mettre au four 30 minutes",
             "appliance": "Four",
             "ustensils":["rouleau à patisserie","fouet"]
+        },
+        {
+            "id": 51,
+            "name" : "Nom de la recette",
+            "servings" : 1,
+            "ingredients": [
+                {
+                    "ingredient" : "Ingredient 1",
+                    "quantity" : 400,
+                    "unit" : "ml"
+                },
+                {
+                    "ingredient" : "Ingredient 2",
+                    "quantity" : 2
+                },
+                {
+                    "ingredient" : "Ingredient 3",
+                    "quantity" : 2,
+                    "unit" : "cuillères à soupe"
+                },
+                {
+                    "ingredient" : "Ingredient 4",
+                    "quantity" : 30,
+                    "unit" : "grammes"
+                },
+                {
+                    "ingredient": "ingredient 5"
+                }
+            ],
+            "time": 10,
+            "description": "Ici vous rentrez la procédure a suivre pour faire cette recette et le tour est joué",
+            "appliance": "Appareil 1",
+            "ustensils": ["Ustensil 1", "Ustensil 2 ", "Ustensil 3" ]
         }
     ]
 }
