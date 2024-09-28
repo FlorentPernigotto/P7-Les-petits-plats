@@ -2,7 +2,7 @@
     "recipes" : [
         {
             "id": 1,
-            "image" : "/img/recipes/limonade de coco.webp",
+            "image" : "img/recipes/limonade de coco.webp",
             "name" : "Limonade de Coco",
             "servings" : 1,
             "ingredients": [
@@ -36,7 +36,7 @@
         },
         {
             "id": 2,
-            "image": "/img/recipes/poisson a la tahitienne.webp",
+            "image": "img/recipes/poisson a la tahitienne.webp",
             "name" : "Poisson Cru à la tahitienne",
             "servings": 2,
             "ingredients": [
@@ -73,7 +73,7 @@
             "ustensils": ["presse citron"]
         },{
             "id": 3,
-            "image": "/img/recipes//poulet coco.webp",
+            "image": "img/recipes//poulet coco.webp",
             "name": "Poulet coco réunionnais",
             "servings": 4,
             "ingredients": [
@@ -109,7 +109,7 @@
             "ustensils": ["couteau"]
         },{
             "id": 4,
-            "image":"/img/recipes/salade de riz.webp",
+            "image":"img/recipes/salade de riz.webp",
             "name": "Salade de riz",
             "servings": 4,
             "ingredients":[
@@ -148,7 +148,7 @@
         },
         {
             "id": 5,
-            "image": "/img/recipes/tarte au thon.webp",
+            "image": "img/recipes/tarte au thon.webp",
             "name": "Tarte au thon",
             "servings": 4,
             "ingredients":[
@@ -188,7 +188,7 @@
         },
         {
             "id": 6,
-            "image": "/img/recipes/tarte aux pommes.webp",
+            "image": "img/recipes/tarte aux pommes.webp",
             "name": "Tarte aux pommes",
             "servings": 6,
             "ingredients":[
@@ -227,7 +227,7 @@
             "ustensils": ["moule à tarte", "saladier", "fourchette"]
         },{
             "id": 7,
-            "image": "/img/recipes/tartelettes au chocolat et aux fraises.webp",
+            "image": "img/recipes/tartelettes au chocolat et aux fraises.webp",
             "name": "Tartelettes au chocolat et aux fraises",
             "servings": 6,
             "ingredients":[
