@@ -1774,37 +1774,75 @@
         },
         {
             "id": 51,
-            "image": "http://via.placeholder.com/380x300",
-            "name" : "Nom de la recette",
-            "servings" : 1,
+            "image": "img/recipes/soupe pho.webp",
+            "name": "Soupe Pho",
+            "servings": 4,
             "ingredients": [
-                {
-                    "ingredient" : "Ingredient 1",
-                    "quantity" : 400,
-                    "unit" : "ml"
-                },
-                {
-                    "ingredient" : "Ingredient 2",
-                    "quantity" : 2
-                },
-                {
-                    "ingredient" : "Ingredient 3",
-                    "quantity" : 2,
-                    "unit" : "cuillères à soupe"
-                },
-                {
-                    "ingredient" : "Ingredient 4",
-                    "quantity" : 30,
-                    "unit" : "grammes"
-                },
-                {
-                    "ingredient": "ingredient 5"
-                }
+              {
+                "ingredient": "Boeuf",
+                "quantity": 300,
+                "unit": "grammes"
+              },
+              {
+                "ingredient": "Nouilles de riz",
+                "quantity": 200,
+                "unit": "grammes"
+              },
+              {
+                "ingredient": "Bouillon de boeuf",
+                "quantity": 1,
+                "unit": "litre"
+              },
+              {
+                "ingredient": "Oignon",
+                "quantity": 1
+              },
+              {
+                "ingredient": "Gingembre frais",
+                "quantity": 30,
+                "unit": "grammes"
+              },
+              {
+                "ingredient": "Bâton de cannelle",
+                "quantity": 1
+              },
+              {
+                "ingredient": "Étoile de badiane",
+                "quantity": 2
+              },
+              {
+                "ingredient": "Clous de girofle",
+                "quantity": 4
+              },
+              {
+                "ingredient": "Sauce nuoc-mâm",
+                "quantity": 3,
+                "unit": "cuillères à soupe"
+              },
+              {
+                "ingredient": "Citron vert",
+                "quantity": 1
+              },
+              {
+                "ingredient": "Feuilles de coriandre",
+                "quantity": 10,
+                "unit": "grammes"
+              },
+              {
+                "ingredient": "Germes de soja",
+                "quantity": 100,
+                "unit": "grammes"
+              },
+              {
+                "ingredient": "Piment rouge frais",
+                "quantity": 1
+              }
             ],
-            "time": 10,
-            "description": "Ici vous rentrez la procédure a suivre pour faire cette recette et le tour est joué",
-            "appliance": "Appareil 1",
-            "ustensils": ["Ustensil 1", "Ustensil 2 ", "Ustensil 3" ]
-        }
+            "time": 120,
+            "description": "Faire revenir les épices (cannelle, badiane, clous de girofle) avec les oignons et le gingembre dans une casserole. Ajouter le bouillon de boeuf et laisser mijoter pendant 2 heures. Faire cuire les nouilles de riz. Disposer les tranches fines de boeuf cru dans des bols, ajouter les nouilles cuites et verser le bouillon bien chaud dessus. Garnir de germes de soja, coriandre, piment et citron vert.",
+            "appliance": "Casserole",
+            "ustensils": ["couteau", "écumoire", "bols"]
+          }
+          
     ]
 }
