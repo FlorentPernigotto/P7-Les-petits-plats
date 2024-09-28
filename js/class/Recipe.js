@@ -3,9 +3,10 @@ import utils from '../modules/utils.js'
 export default class Recipe{
     constructor(data){
         this.id = data.id;
-		this.name = data.name;
+        this.image = data.image; // Ajout de l'image
+        this.name = data.name;
         this.description = data.description;
-        this.appareils = data.appliance.toLowerCase();
+        this.apareils = data.appliance.toLowerCase();
         this.ingredients = data.ingredients;
         this.ustensils = data.ustensils;
         this.servings = data.servings;
@@ -27,7 +28,7 @@ export default class Recipe{
 
         let image = document.createElement('img');
         image.setAttribute('class', 'recipes__img');
-        image.setAttribute('src', 'http://via.placeholder.com/380x300');
+        image.setAttribute('src', this.image || 'http://via.placeholder.com/380x300'); // Utilisation de l'image de la recette
 
         let description = document.createElement('div');
         description.setAttribute('class', 'recipes__description');
