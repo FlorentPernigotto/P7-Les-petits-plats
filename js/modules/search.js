@@ -10,9 +10,9 @@ const search = (filters, recipes) => {
         let visible = true;
 
         if (filters.length > 0) {
-            const appareils = [recipe.appareils.toLowerCase()];
-            const ingrédients = recipe.ingredients.map(ingredients => ingredients.ingredient.toLowerCase());
-            const ustensils = recipe.ustensils.map(ustensil => ustensil.toLowerCase());
+            const appareils = recipe.appareils ? [recipe.appareils.toLowerCase()] : [];
+            const ingrédients = recipe.ingredients ? recipe.ingredients.map(ingredient => ingredient.ingredient.toLowerCase()) : [];
+            const ustensils = recipe.ustensils ? recipe.ustensils.map(ustensil => ustensil.toLowerCase()) : [];            
             const allFilters = [...appareils, ...ingrédients, ...ustensils];
 
             filters.forEach(filter => {
